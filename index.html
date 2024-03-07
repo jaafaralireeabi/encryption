@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encryption</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+    <body>
+    <div class="overlay"></div>
+    <div class="con">
+        <h1>
+            encryption
+        </h1>
+        <form action="">
+            <div class="el">
+                <textarea class="plainText" name="plain" id="" cols="30" rows="10" placeholder="enter the plainText"></textarea>
+            </div>
+            <div class="el encSys">
+                <select class="encryptionMethods" name="comboBoxMethods" id="">
+                    <option value="Caesar">Caesar</option>
+                    <option value="Mltiplicative">Mltiplicative</option>
+                    <option value="Affine">Affine</option>
+                    <option value="Hill">Hill</option>
+                    <option value="Vigenere">Vigenere</option>
+                    <option value="playFair">playFair</option>
+                    <option value="One_Time">One-Time</option>
+                </select>
+                <div class="key">
+                    
+                </div>
+                <div class="convert">
+                    <p>
+                        convert
+                    </p>
+                </div>
+            </div>
+            <div class="el cipherTextAreaEl">
+                <div class="copy">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                        <path d="M384 336H192c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16l140.1 0L400 115.9V320c0 8.8-7.2 16-16 16zM192 384H384c35.3 0 64-28.7 64-64V115.9c0-12.7-5.1-24.9-14.1-33.9L366.1 14.1c-9-9-21.2-14.1-33.9-14.1H192c-35.3 0-64 28.7-64 64V320c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H256c35.3 0 64-28.7 64-64V416H272v32c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192c0-8.8 7.2-16 16-16H96V128H64z"/>
+                    </svg>
+                    <!-- <i class="fa-brands fa-facebook"></i> -->
+                </div>
+                <textarea class="cipherText" name="cipher" id="" cols="30" rows="10" placeholder="the cipherText" disabled></textarea>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
